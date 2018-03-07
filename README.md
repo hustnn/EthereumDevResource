@@ -2,4 +2,5 @@
 Ethereum development resource collection
 
 ## Beginner
-- http://me.tryblockchain.org/getting-up-to-speed-on-ethereum.html
+- https://medium.com/@mattcondon/getting-up-to-speed-on-ethereum-63ed28821bbe (english version)
+- http://me.tryblockchain.org/getting-up-to-speed-on-ethereum.html (chinese version)
