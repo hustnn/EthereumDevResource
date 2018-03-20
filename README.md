@@ -11,6 +11,8 @@
 
 ## Developer
  - https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI
+ - https://www.ethereum.org/greeter
+ - https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
  - https://bitcoinbook.info/
  - https://medium.freecodecamp.org/the-authoritative-guide-to-blockchain-development-855ab65b58bc
  - https://hype.codes/how-code-ethereum-dapps
