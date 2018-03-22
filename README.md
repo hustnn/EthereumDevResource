@@ -11,6 +11,7 @@
 
 ## Developer
  - https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI
+ - https://zupzup.org/eth-smart-contracts-go/
  - https://www.ethereum.org/greeter
  - https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
  - https://bitcoinbook.info/
