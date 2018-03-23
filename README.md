@@ -23,4 +23,4 @@
 
 ## Internal
  - https://github.com/pirapira/awesome-ethereum-virtual-machine
- 
+ - https://auth0.com/blog/an-introduction-to-ethereum-and-smart-contracts-part-2/
