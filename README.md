@@ -20,6 +20,7 @@
  - https://www.youtube.com/watch?v=3681ZYbDSSk&feature=youtu.be
  - https://blog.frankel.ch/starting-ethereum/3/#gsc.tab=0
  - https://dappsforbeginners.wordpress.com/tutorials/setting-up-your-development-environment/
+ - https://arvanaghi.com/blog/testing-smart-contracts-on-a-private-blockchain-with-Geth/
 
 ## Internal
  - https://github.com/pirapira/awesome-ethereum-virtual-machine
