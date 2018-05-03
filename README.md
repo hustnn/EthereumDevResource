@@ -26,3 +26,4 @@
  - https://github.com/pirapira/awesome-ethereum-virtual-machine
  - https://auth0.com/blog/an-introduction-to-ethereum-and-smart-contracts-part-2/
  - https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369
+ - https://github.com/CoinCulture/evm-tools/tree/master/analysis
