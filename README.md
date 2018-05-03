@@ -27,3 +27,7 @@
  - https://auth0.com/blog/an-introduction-to-ethereum-and-smart-contracts-part-2/
  - https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369
  - https://github.com/CoinCulture/evm-tools/tree/master/analysis
+ - https://ethereum.stackexchange.com/questions/268/ethereum-block-architecture
+ - https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/
+ - https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored/391#391
+ - https://blog.ethereum.org/2015/06/26/state-tree-pruning/
