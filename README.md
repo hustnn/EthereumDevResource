@@ -33,3 +33,4 @@
  - https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/
  - https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored/391#391
  - https://blog.ethereum.org/2015/06/26/state-tree-pruning/
+ - https://github.com/ethereum/go-ethereum/issues/14713
