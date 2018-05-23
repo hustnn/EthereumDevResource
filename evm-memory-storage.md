@@ -1,4 +1,4 @@
-# The Ethereum Virtual Machine has three areas where it can store items.
+To understand EVM and smart contract better
 # Ethereum Virtual Machine (EVM)
 
 The Ethereum Virtual Machine (EVM) is the runtime environment for smart contracts in Ethereum. The EVM runs smart-contracts that are built up from bytecodes. Bytecodes are identied by a 160-bit address, and stored in the blockchain, which is also known as "accounts". The EVM operates on 256-bit pseudo registers. Which means that the EVM does not operate via registers. But, through an expandable stack which is used to pass parameters not only to functions/instructions, but also for memory and other algorithmic operations. The following excerpt is taken from the Solidity documentation, and it is also worth mentioning:
@@ -14,7 +14,9 @@ Every node runs the interpreter for every transaction. It's just like bitcoin. E
 The state transition function has a series of parts. There's the part that updates account balances and nonces (the simple part), the part that handles gas and gas refunds, the part that executes EVM byte code (which can cause account balances and storage values to change), and the part that pays miners for mining blocks and uncles. This "function" is defined in detail in the yellow paper and implemented independently in each of the ethereum clients (c++, go, python, etc). The EVM, or what I'm calling the interpreter, is typically just a for loop that increments a program counter and has a big switch statement telling it what to do for each operation in the byte code (pop/push the stack, load/store memory, load/store storage, call another contract, suicide, etc.)
 
 
-# Memory Management
+# Memory Management 
+
+The Ethereum Virtual Machine has three areas where it can store items.
 
 ## (Persistent)
 The Storage is a persistent key-value storage mapping (256-to-256-bit integers). And is documented as below:
@@ -61,3 +63,17 @@ state variables are always in storage
 function arguments are in memory by default
 local variables of struct, array or mapping type reference storage by default
 local variables of value type (i.e. neither array, nor struct nor mapping) are stored in the stack
+
+# updradable Ethereum Contract
+
+One method is to use a System of Contracts as outlined below:
+
+Contract "Register" - will contain pairs "name - address" for all contracts of your system;
+Contract Backend;
+Contract Frontend using Backend;
+Deploy Register & get address of it;
+Deploy Backend & register address of Backend into already deployed Register;
+Hardcode the address of Register into source of Backend. Before any call Backend from Frontend you should call your Register and get the actual address of Backend.
+Then you can update your Backend contract any time - simply deploy the new one and re-register them in the Register.
+
+Calling external contract: https://solidity.readthedocs.io/en/latest/control-structures.html?highlight=extends#external-function-calls
