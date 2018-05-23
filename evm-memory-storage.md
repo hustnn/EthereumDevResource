@@ -9,6 +9,10 @@ The address of an external account is determined from the public key while the a
 
 Regardless of whether or not the account stores code, the two types are treated equally by the EVM.
 
+Every node runs the interpreter for every transaction. It's just like bitcoin. Every node runs the little script that executes when you try to spend from a previously unspent output (assuming you know about bitcoin). The hash of the transaction isn't relevant until it is being stuffed into a merkle tree. When running the execution, all we care about is the amount of gas, the data being passed in, and the code of the contract that's being called. When the execution completes, the storage tree of the contract may be updated, so we recompute the merkle root hash of that tree (and any other contract which may have been called by that one!)
+
+The state transition function has a series of parts. There's the part that updates account balances and nonces (the simple part), the part that handles gas and gas refunds, the part that executes EVM byte code (which can cause account balances and storage values to change), and the part that pays miners for mining blocks and uncles. This "function" is defined in detail in the yellow paper and implemented independently in each of the ethereum clients (c++, go, python, etc). The EVM, or what I'm calling the interpreter, is typically just a for loop that increments a program counter and has a big switch statement telling it what to do for each operation in the byte code (pop/push the stack, load/store memory, load/store storage, call another contract, suicide, etc.)
+
 
 # Memory Management
 
@@ -29,6 +33,8 @@ The storage memory is the memory declared outside of the user-defined functions 
 
 Storage contains all the contract state variables reside. Every contract has its own storage and it is persistent between function calls and quite expensive to use.
 
+The storage is persistented in every account state. A contract is just an account in ethereum's state tree. Every account has a balance, a nonce, bytecode, and the root hash of a storage tree. For normal accounts, the byte code and storage hash are empty. For contracts, the bytecode is the contract's code and the storage hash is the merkle root hash of all the key-value pairs in the contract's storage. The only thing that goes in the block are the transactions themselves, and the merkle root hash of the entire state tree. To be a full node tho, you must keep all the key-value pairs for the state tree (where keys are addresses and values are serialized accounts) and for the storage trees for each contract account (where the keys are storage locations and values are storage values).
+
 ## Memory (Volatile)
 This memory is mainly used when calling functions or for regular memory operations. The ocial documentation explicitly indicates that the EVM does not have traditional registers. Which means that the virtual stack previously discussed will be used primarily to push arguments to the instructions. The following is the excerpt explaining such behavior:
 
@@ -42,6 +48,9 @@ It does not have the concept of registers. A virtual stack is being used instead
 
 Stack is used to hold small local variables. It is almost free to use, but can only hold a limited amount of values.
 
+EVM memory is transient. The EVM is not really a virtual machine (VM has a strong connotation for many) - it's just an interpreter for the EVM assembly language. As the interpreter runs, it maintains a stack (where each element is 32 bytes) and a memory byte-array, and has access to the contract's storage tree. The stack and memory byte-array are dropped when the execution completes. But yes, every single node runs the transaction - at any point in the execution, the state of the stack, the memory-byte array, the program counter, and the storage should be identical on each node.
+
+## Some notes
 For almost all types, you cannot specify where they should be stored, because they are copied everytime they are used.
 
 The types where the so-called storage location is important are structs and arrays. If you e.g. pass such variables in function calls, their data is not copied if it can stay in memory or stay in storage. This means that you can modify their content in the called function and these modifications will still be visible in the caller.
