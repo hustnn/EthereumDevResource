@@ -69,11 +69,17 @@ local variables of value type (i.e. neither array, nor struct nor mapping) are s
 One method is to use a System of Contracts as outlined below:
 
 Contract "Register" - will contain pairs "name - address" for all contracts of your system;
+
 Contract Backend;
+
 Contract Frontend using Backend;
+
 Deploy Register & get address of it;
+
 Deploy Backend & register address of Backend into already deployed Register;
+
 Hardcode the address of Register into source of Backend. Before any call Backend from Frontend you should call your Register and get the actual address of Backend.
+
 Then you can update your Backend contract any time - simply deploy the new one and re-register them in the Register.
 
 Calling external contract: https://solidity.readthedocs.io/en/latest/control-structures.html?highlight=extends#external-function-calls
