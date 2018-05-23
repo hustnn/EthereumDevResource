@@ -21,12 +21,11 @@ Each account has a persistent memory area which is called storage. Storage is a 
 
 The storage memory is the memory declared outside of the user-defined functions and within the Contract context. For instance, in listing 1, the userBalances and withdrawn will be in the memory storage. This can also be identied by the SSTORE / SLOAD instructions.
 
-'
-contract SendBalance {
+`contract SendBalance {
     mapping ( address => uint ) userBalances ;
     bool withdrawn = false ;
 (...)
-}'
+}`
 
 Storage contains all the contract state variables reside. Every contract has its own storage and it is persistent between function calls and quite expensive to use.
 
