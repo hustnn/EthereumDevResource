@@ -19,7 +19,7 @@ Every account has a persistent key-value store mapping 256-bit words to 256-bit 
 
 Each account has a persistent memory area which is called storage. Storage is a key-value store that maps 256-bit words to 256-bit words. It is not possible to enumerate storage from within a contract and it is comparatively costly to read and even more so, to modify storage. A contract can neither read nor write to any storage apart from its own.
 
-The storage memory is the memory declared outside of the user-defined functions and within the Contract context. For instance, in listing 1, the userBalances and withdrawn will be in the memory storage. This can also be identied by the SSTORE / SLOAD instructions.
+The storage memory is the memory declared outside of the user-defined functions and within the Contract context. For instance, in following example, the userBalances and withdrawn will be in the memory storage. This can also be identied by the SSTORE / SLOAD instructions.
 
 `contract SendBalance {
     mapping ( address => uint ) userBalances ;
