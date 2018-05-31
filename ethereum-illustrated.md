@@ -7,7 +7,7 @@ Ethereum can be considerred as a transaction-based state machine. The state for 
 
 The state we metioned above is called World State. The world state is a mapping between address and account state. Each account is an object in the world state. An account state contains 
 
-![ethereum internal](https://github.com/hustnn/EthereumDevResource/blob/master/images/evm.jpg)
+![ethereum internal](https://i.stack.imgur.com/afWDt.jpg)
 
 # Virtual Machine
 # Implementation
