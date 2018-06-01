@@ -36,4 +36,6 @@ A transaction is an atomic operation. Can't divide or interrupt. That is, All (c
 
 ## Ethereum virtual machine (EVM)
 
+EVM code is executed on 
+
 # Implementation
