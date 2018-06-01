@@ -36,6 +36,8 @@ A transaction is an atomic operation. Can't divide or interrupt. That is, All (c
 
 ## Ethereum virtual machine (EVM)
 
-EVM code is executed on 
+EVM code is executed on Ethereum virtual machine (EVM). Transaction of message call invokes the contract code in the contract address with the parameters in the input data of message. The contract execution updates the state in the storage of the contract address. The Ethereum Virtual Machine is the runtime environment for smart contracts in Ethreum. The EVM is a simple stack-based architecture. It consists of 3 parts: EVM code (immutable), Machine state (volatile), World state (persistent). The machine state is similar to the program execution environme of normal os. It has the Program counter (PC), Stack, Memory and Gas. The gas here is a special component in ethereum to support the execution of EVM code. The world state is actually the persistent state of account. 
+
+There are several storage resources inside EVM: stack, memory and account storage. Stack has 1024 elements and each element consists 256 bits. All operations (256-bit read/right) on the stack are performed on the stack top and the stack can be accessed with many instructions such as PUSH/POP/COPY/SWAP and et al. 
 
 # Implementation
