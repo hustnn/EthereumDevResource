@@ -34,3 +34,4 @@
  - https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored/391#391
  - https://blog.ethereum.org/2015/06/26/state-tree-pruning/
  - https://github.com/ethereum/go-ethereum/issues/14713
+ - https://ethereum-homestead.readthedocs.io/en/latest/index.html
