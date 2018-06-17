@@ -84,7 +84,7 @@ Then you can update your Backend contract any time - simply deploy the new one a
 
 Calling external contract: https://solidity.readthedocs.io/en/latest/control-structures.html?highlight=extends#external-function-calls
 
-# Design philosophy
+# EVM Design philosophy
 
 ## Determinism
 
