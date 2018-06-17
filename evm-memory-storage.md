@@ -83,3 +83,35 @@ Hardcode the address of Register into source of Backend. Before any call Backend
 Then you can update your Backend contract any time - simply deploy the new one and re-register them in the Register.
 
 Calling external contract: https://solidity.readthedocs.io/en/latest/control-structures.html?highlight=extends#external-function-calls
+
+# Design philosophy
+
+## Determinism
+
+Ethereum, like all blockchains, is a trustless and decentralized network. Each node in the network must be able to validate all transactions and their code execution on their own. They have to do this to determine how much Ether each address owns after each transaction, and to decide whether or not to relay a transaction to other nodes. To accomplish this, all nodes have to agree with eachother what the exact execution flow of a contract execution was and what the state of the blockchain is.
+
+For example, in the JVM you can request a random number, read a file or load data from the internet. These operations can return completely different results depending on which computer is executing them. They are therefore not deterministic. The JVM was not designed with determinism in mind. Most existing virtual machines do not guarantee determinism.
+
+It is less work to write a new virtual machine from scratch than it would be to modify an existing virtual machine to fit the strict and precise requirements of Ethereum.
+
+## Execution speed
+
+As mentioned before, something like the JVM comes loaded with lots of features that aren't really useful in the case of Ethereum. This can only serve to slow down the execution of smart contracts. The execution speed of smart contracts is crucial to make the network affordable to use. If a contract executes twice as slowly, it would cost twice the transaction fees to use it.
+
+## Security
+
+The Ethereum virtual machine needs perfect security in very specific ways. For example, one contract should not be able to change the state of another contract. Using an existing virtual machine would be dubious because they were not written with Ethereum's special requirements in mind.
+
+## Measuring execution effort
+
+In a system like Ethereum, one would like small transactions that take very few CPU cycles to have small transaction fees. Large transactions that do a lot of computation should cost more, proportionally. To accomplish this, you need to measure how much effort it took to execute a contract code. You can't just measure time or CPU cycles, because those are implementation and machine-dependent. We want all the nodes on the network to agree on exactly how much effort it took.
+
+Therefore, Ethereum uses the unit gas to measure the effort it took to execute a transaction. Each opcode in the EVM takes a certain universally agreed-upon amount of gas.
+
+This dynamic transaction fee system provides the necessary economic incentive to senders of transactions and writers of contracts to reduce the use of storage space and CPU time on all nodes.
+
+Pretty much no existing virtual machines come with such a counter.
+
+## Binary size
+
+Having less opcodes (only the ones needed for this specific purpose) means programs can be packed more tightly. This reduces blockchain size and transaction fees.
