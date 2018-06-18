@@ -35,3 +35,6 @@
  - https://blog.ethereum.org/2015/06/26/state-tree-pruning/
  - https://github.com/ethereum/go-ethereum/issues/14713
  - https://ethereum-homestead.readthedocs.io/en/latest/index.html
+ 
+ ## Contract
+  - https://consensys.github.io/smart-contract-best-practices/
