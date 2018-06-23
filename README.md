@@ -40,3 +40,4 @@
   - https://consensys.github.io/smart-contract-best-practices/
   - https://openzeppelin.org/
   - https://ethereum.stackexchange.com/questions/52/how-were-gas-costs-chosen-for-the-ethereum-virtual-machine-instructions
+  - https://github.com/androlo/solidity-workshop
