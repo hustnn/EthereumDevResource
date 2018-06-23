@@ -42,3 +42,4 @@
   - https://ethereum.stackexchange.com/questions/52/how-were-gas-costs-chosen-for-the-ethereum-virtual-machine-instructions
   - https://github.com/androlo/solidity-workshop
   - https://github.com/TiesNetwork/ties-docs/wiki/Where-do-decentralized-applications-store-their-data%3F
+  - https://programtheblockchain.com/posts/2018/03/09/understanding-ethereum-smart-contract-storage/
