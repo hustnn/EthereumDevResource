@@ -23,6 +23,7 @@
  - https://arvanaghi.com/blog/testing-smart-contracts-on-a-private-blockchain-with-Geth/
  - https://ethereum.stackexchange.com/questions/23720/usage-of-memory-storage-and-stack-areas-in-evm?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
  - https://medium.com/loom-network/ethereum-solidity-memory-vs-storage-how-to-initialize-an-array-inside-a-struct-184baf6aa2eb
+ - https://news.ycombinator.com/item?id=14850806
 
 ## Internal
  - https://github.com/pirapira/awesome-ethereum-virtual-machine
