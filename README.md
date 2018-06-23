@@ -35,6 +35,7 @@
  - https://blog.ethereum.org/2015/06/26/state-tree-pruning/
  - https://github.com/ethereum/go-ethereum/issues/14713
  - https://ethereum-homestead.readthedocs.io/en/latest/index.html
+ - https://nervous.io/clojure/crypto/2018/04/04/clojure-evm-iv/
  
  ## Contract
   - https://consensys.github.io/smart-contract-best-practices/
@@ -44,3 +45,6 @@
   - https://github.com/TiesNetwork/ties-docs/wiki/Where-do-decentralized-applications-store-their-data%3F
   - https://programtheblockchain.com/posts/2018/03/09/understanding-ethereum-smart-contract-storage/
   - https://blog.singulargarden.com/posts/storage-and-dapps-on-ethereum-blockchain/
+  - https://medium.com/coinmonks/key-value-storage-on-the-ethereum-network-1f1e11bfac7a
+  - http://aakilfernandes.github.io/infosphere
+
