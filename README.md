@@ -31,7 +31,6 @@
  - https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369
  - https://github.com/CoinCulture/evm-tools/tree/master/analysis
  - https://ethereum.stackexchange.com/questions/268/ethereum-block-architecture
- - https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/
  - https://ethereum.stackexchange.com/questions/359/where-is-the-state-data-stored/391#391
  - https://blog.ethereum.org/2015/06/26/state-tree-pruning/
  - https://github.com/ethereum/go-ethereum/issues/14713
@@ -49,3 +48,9 @@
   - https://medium.com/coinmonks/key-value-storage-on-the-ethereum-network-1f1e11bfac7a
   - http://aakilfernandes.github.io/infosphere
 
+ ## Merkle Tree
+  - https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/
+  - http://ben.kirw.in/merkle-slides/#/
+  - https://github.com/ethereum/solidity-examples/blob/master/docs/patricia_tree/PatriciaTree.md
+  - https://hackernoon.com/merkle-tree-introduction-4c44250e2da7
+  - https://ethereum.stackexchange.com/questions/15288/ethereum-merkle-tree-explanation/15301
