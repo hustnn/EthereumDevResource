@@ -36,6 +36,7 @@
  - https://github.com/ethereum/go-ethereum/issues/14713
  - https://ethereum-homestead.readthedocs.io/en/latest/index.html
  - https://nervous.io/clojure/crypto/2018/04/04/clojure-evm-iv/
+ - https://medium.com/@hayeah
  
  ## Contract
   - https://consensys.github.io/smart-contract-best-practices/
