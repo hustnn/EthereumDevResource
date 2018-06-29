@@ -1,4 +1,4 @@
-# Ethereum development resource collection
+# Ethereum Learning
 
 ## Beginner
 - https://medium.com/@mattcondon/getting-up-to-speed-on-ethereum-63ed28821bbe (english version)
