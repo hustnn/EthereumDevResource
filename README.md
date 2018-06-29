@@ -65,3 +65,5 @@
   - https://medium.com/connext/ethcalate-containerized-state-channels-for-dapps-af4d47ed0ff7
   - https://docs.google.com/presentation/d/1mdmmgQlRFUvznq1jdmRwkwEyQB0YON5yAg4ArxtanE4/edit#slide=id.g34fbaec817_0_222
   - https://github.com/ethereum/sharding/blob/develop/docs/doc.md
+  - https://medium.com/@argongroup/ethereum-plasma-explained-608720d3c60e
+  - https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4
