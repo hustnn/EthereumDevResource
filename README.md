@@ -58,3 +58,10 @@
   
  ## Questions
   - https://ethereum.stackexchange.com/questions/17964/why-are-local-variables-allocated-to-storage-instead-of-memory
+  
+ ## Scalability
+  - https://medium.com/@jonchoi/ethereum-casper-101-7a851a4f1eb0
+  - https://medium.com/@icebearhww/ethereum-sharding-and-finality-65248951f649
+  - https://medium.com/connext/ethcalate-containerized-state-channels-for-dapps-af4d47ed0ff7
+  - https://docs.google.com/presentation/d/1mdmmgQlRFUvznq1jdmRwkwEyQB0YON5yAg4ArxtanE4/edit#slide=id.g34fbaec817_0_222
+  - https://github.com/ethereum/sharding/blob/develop/docs/doc.md
