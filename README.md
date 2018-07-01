@@ -71,4 +71,3 @@
 ## EVM Storage
  - https://ether.direct/2017/08/14/diving-into-the-ethereum-vm-part-2-storage-layout/
  - https://blog.qtum.org/@hayeah
- - https://ether.direct/2017/08/14/diving-into-the-ethereum-vm-part-2-storage-layout/
