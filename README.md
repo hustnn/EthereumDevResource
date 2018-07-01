@@ -67,3 +67,6 @@
   - https://github.com/ethereum/sharding/blob/develop/docs/doc.md
   - https://medium.com/@argongroup/ethereum-plasma-explained-608720d3c60e
   - https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4
+  
+## EVM Storage
+ - https://ether.direct/2017/08/14/diving-into-the-ethereum-vm-part-2-storage-layout/
