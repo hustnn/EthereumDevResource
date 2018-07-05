@@ -71,3 +71,6 @@
 ## EVM Storage
  - https://ether.direct/2017/08/14/diving-into-the-ethereum-vm-part-2-storage-layout/
  - https://blog.qtum.org/@hayeah
+ 
+## GAS Price
+ - https://docs.google.com/spreadsheets/d/1n6mRqkBz3iWcOlRem_mO09GtSKEKrAsfO7Frgx18pNU/edit#gid=0
