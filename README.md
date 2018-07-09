@@ -55,6 +55,7 @@
   - https://github.com/ethereum/solidity-examples/blob/master/docs/patricia_tree/PatriciaTree.md
   - https://hackernoon.com/merkle-tree-introduction-4c44250e2da7
   - https://ethereum.stackexchange.com/questions/15288/ethereum-merkle-tree-explanation/15301
+  - https://medium.com/cybermiles/diving-into-ethereums-world-state-c893102030ed
   
  ## Questions
   - https://ethereum.stackexchange.com/questions/17964/why-are-local-variables-allocated-to-storage-instead-of-memory
