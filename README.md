@@ -56,9 +56,11 @@
   - https://hackernoon.com/merkle-tree-introduction-4c44250e2da7
   - https://ethereum.stackexchange.com/questions/15288/ethereum-merkle-tree-explanation/15301
   - https://medium.com/cybermiles/diving-into-ethereums-world-state-c893102030ed
+  - https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-Patricia-Tree
   
  ## Questions
   - https://ethereum.stackexchange.com/questions/17964/why-are-local-variables-allocated-to-storage-instead-of-memory
+  - https://ethereum.stackexchange.com/questions/28976/leveldb-in-geth-key-and-values
   
  ## Scalability
   - https://medium.com/@jonchoi/ethereum-casper-101-7a851a4f1eb0
@@ -72,6 +74,7 @@
 ## EVM Storage
  - https://ether.direct/2017/08/14/diving-into-the-ethereum-vm-part-2-storage-layout/
  - https://blog.qtum.org/@hayeah
+ - https://medium.com/coinmonks/data-structure-in-ethereum-episode-4-diving-by-examples-f6a4cbd8c329
  
 ## GAS Price
  - https://docs.google.com/spreadsheets/d/1n6mRqkBz3iWcOlRem_mO09GtSKEKrAsfO7Frgx18pNU/edit#gid=0
