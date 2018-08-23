@@ -1,4 +1,4 @@
-# Ethereum Learning
+# Ethereum Learning 
 
 ## Beginner
 - https://medium.com/@mattcondon/getting-up-to-speed-on-ethereum-63ed28821bbe (english version)
@@ -55,9 +55,12 @@
   - https://github.com/ethereum/solidity-examples/blob/master/docs/patricia_tree/PatriciaTree.md
   - https://hackernoon.com/merkle-tree-introduction-4c44250e2da7
   - https://ethereum.stackexchange.com/questions/15288/ethereum-merkle-tree-explanation/15301
+  - https://medium.com/cybermiles/diving-into-ethereums-world-state-c893102030ed
+  - https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-Patricia-Tree
   
  ## Questions
   - https://ethereum.stackexchange.com/questions/17964/why-are-local-variables-allocated-to-storage-instead-of-memory
+  - https://ethereum.stackexchange.com/questions/28976/leveldb-in-geth-key-and-values
   
  ## Scalability
   - https://medium.com/@jonchoi/ethereum-casper-101-7a851a4f1eb0
@@ -67,10 +70,17 @@
   - https://github.com/ethereum/sharding/blob/develop/docs/doc.md
   - https://medium.com/@argongroup/ethereum-plasma-explained-608720d3c60e
   - https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4
+  - https://medium.com/chain-cloud-company-blog/plasma-in-10-minutes-c856da94e339
+  - https://plasma.io/
+  - https://github.com/ethereum-plasma/plasma
+  - https://github.com/omisego/plasma-mvp
+  - https://github.com/voltairelabs/plasma
+  - https://ethereum.stackexchange.com/questions/41226/is-there-an-implementation-of-the-minimal-viable-plasma-concept-as-proposed-by-v
   
 ## EVM Storage
  - https://ether.direct/2017/08/14/diving-into-the-ethereum-vm-part-2-storage-layout/
  - https://blog.qtum.org/@hayeah
+ - https://medium.com/coinmonks/data-structure-in-ethereum-episode-4-diving-by-examples-f6a4cbd8c329
  
 ## GAS Price
  - https://docs.google.com/spreadsheets/d/1n6mRqkBz3iWcOlRem_mO09GtSKEKrAsfO7Frgx18pNU/edit#gid=0
