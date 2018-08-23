@@ -22,16 +22,15 @@ library Dictionary {
             self.list[id].data = data;
             return;
         }
+        self.list[id] = Node({ prev: 0, next: 0, data: data, initialized: true });
         self.list[id].prev = afterId;
         if (self.list[afterId].next == NULL) {
-            self.list[id].next =  NULL;
+            self.list[id].next = NULL;
             self.lastNodeId = id;
         } else {
             self.list[id].next = self.list[afterId].next;
             self.list[self.list[afterId].next].prev = id;
         }
-        self.list[id].data = data;
-        self.list[id].initialized = true;
         self.list[afterId].next = id;
         self.len++;
     }
@@ -41,6 +40,7 @@ library Dictionary {
             self.list[id].data = data;
             return;
         }
+        self.list[id] = Node({ prev: 0, next: 0, data: data, initialized: true });
         self.list[id].next = beforeId;
         if (self.list[beforeId].prev == NULL) {
             self.list[id].prev = NULL;
@@ -49,8 +49,6 @@ library Dictionary {
             self.list[id].prev = self.list[beforeId].prev;
             self.list[self.list[beforeId].prev].next = id;
         }
-        self.list[id].data = data;
-        self.list[id].initialized = true;
         self.list[beforeId].prev = id;
         self.len++;
     }
@@ -111,13 +109,33 @@ library Dictionary {
         return self.list[id].prev;
     }
 
-    function keys(Data storage self) internal constant returns (uint[]) {
+    function keys(Data storage self) internal view returns (uint[]) {
         uint[] memory arr = new uint[](self.len);
         uint node = self.firstNodeId;
-        for (uint i=0; i < self.len; i++) {
+        for (uint i = 0; i < self.len; i++) {
             arr[i] = node;
             node = next(self, node);
         }
         return arr;
+    }
+}
+
+contract Foo {
+    // declare and use new Dictionary structure
+    using Dictionary for Dictionary.Data;
+    Dictionary.Data private dic;
+
+    function update() public {
+        dic.set(1, "value");
+        dic.set(2, "foo");
+        dic.set(123, "bar");
+        dic.set(1, "new value");
+        // get an item
+        dic.get(2); // => '0x666f6f' (byte hex of 'foo')
+    }
+
+    function get_keys() public view returns (uint[]) {
+        // get all keys
+        return dic.keys(); // => [1, 2, 123]
     }
 }
