@@ -38,6 +38,18 @@ A transaction is an atomic operation. Can't divide or interrupt. That is, All (c
 
 EVM code is executed on Ethereum virtual machine (EVM). Transaction of message call invokes the contract code in the contract address with the parameters in the input data of message. The contract execution updates the state in the storage of the contract address. The Ethereum Virtual Machine is the runtime environment for smart contracts in Ethreum. The EVM is a simple stack-based architecture. It consists of 3 parts: EVM code (immutable), Machine state (volatile), World state (persistent). The machine state is similar to the program execution environme of normal os. It has the Program counter (PC), Stack, Memory and Gas. The gas here is a special component in ethereum to support the execution of EVM code. The world state is actually the persistent state of account. 
 
-There are several storage resources inside EVM: stack, memory and account storage. Stack has 1024 elements and each element consists 256 bits. All operations (256-bit read/right) on the stack are performed on the stack top and the stack can be accessed with many instructions such as PUSH/POP/COPY/SWAP and et al. 
+There are several storage resources inside EVM: stack, memory and account storage. Stack has 1024 elements and each element consists 256 bits. Memory is byte addressing and the address is increasing linearly.  Account storage is 256 bits to 256 bits key-value store.
+
+For the stack, all operations (256-bit read/right) on the stack are performed on the stack top and the stack can be accessed with many instructions such as PUSH/POP/COPY/SWAP and et al. 
+
+Memory is linear and can be addressed at byte level. Access with MSTORE/MSTORE8/MLOAD instructions. All locations in memory are well-defined initially as zero.
+
+Storage is a key-value store that maps 256-bit words to 256-bit words. Access with SSTORE/SLOAD instructions. All locations in storage are well-defined initially as zero.
+
+EVM Code is the bytecode that the EVM can natively execute. You can also get the assembly view of the bytecode. The evm instruction is converted to operations. The operations can perform push/pop operations from the stack and set the PC which is specified the next instruction of the evm code. The stack has limited space and it can randomly access the storage space in memory as well as storage.
+
+## Message Call
+
+
 
 # Implementation
