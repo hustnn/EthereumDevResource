@@ -76,6 +76,9 @@
   - https://github.com/omisego/plasma-mvp
   - https://github.com/voltairelabs/plasma
   - https://ethereum.stackexchange.com/questions/41226/is-there-an-implementation-of-the-minimal-viable-plasma-concept-as-proposed-by-v
+  - https://media.consensys.net/state-of-ethereum-protocol-1-d3211dd0f6
+  - https://medium.com/rocket-pool/ethereum-2-0-whos-building-it-54a735442e
+  - https://notes.ethereum.org/9MMuzWeFTTSg-3Tz_YeiBA?view
   
 ## EVM Storage
  - https://ether.direct/2017/08/14/diving-into-the-ethereum-vm-part-2-storage-layout/
